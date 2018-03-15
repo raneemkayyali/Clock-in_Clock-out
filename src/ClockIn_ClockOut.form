@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="TimeClock"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="nameBox" min="-2" pref="169" max="-2" attributes="0"/>
+                          <Component id="idBox" min="-2" pref="90" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="clockInBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="clockOutBtn" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jScrollPane2" pref="353" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane2" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="clockInBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="clockOutBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="idBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nameBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="40" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ClockLabel dateLable = new ClockLabel(&quot;date&quot;);&#xa;    ClockLabel timeLable = new ClockLabel(&quot;time&quot;);&#xa;    ClockLabel dayLable = new ClockLabel(&quot;day&quot;);&#xa; &#xa;    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xa;    setSize(300,150);&#xa;    setLayout(new GridLayout(3, 1));&#xa;    add(dateLable);&#xa;    add(timeLable);&#xa;    add(dayLable);&#xa;&#xa;    setVisible(true);"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="286" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Component class="javax.swing.JButton" name="clockInBtn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Clock-in"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="clockOutBtn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Clock-out"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="textArea">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="idBox.addActionListener(new ActionListener() {&#xa;            public void actionPerformed(ActionEvent event) {&#xa;&#xa;                JComboBox idBox = (JComboBox) event.getSource();&#xa;&#xa;                Object selected = idBox.getSelectedItem();&#xa;                if(selected.toString().equals(&quot;mmartz&quot;)) &#xa;                nameBox.setSelectedIndex(2);&#xa;                else if(selected.toString().equals(&quot;scarver&quot;))&#xa;                nameBox.setSelectedIndex(1);&#xa;                else if(selected.toString().equals(&quot;arichards5&quot;))&#xa;                nameBox.setSelectedIndex(3);&#xa;                else if(selected.toString().equals(&quot;jsmith26&quot;))&#xa;                nameBox.setSelectedIndex(4);&#xa;                else&#xa;                nameBox.setSelectedIndex(0);&#xa;            }&#xa;        });&#xa;&#xa;nameBox.addActionListener(new ActionListener() {&#xa;            public void actionPerformed(ActionEvent event) {&#xa;&#xa;                JComboBox nameBox = (JComboBox) event.getSource();&#xa;&#xa;                Object selectName = nameBox.getSelectedItem();&#xa;                if(selectName.toString().equals(&quot;Mike Martz&quot;))&#xa;                idBox.setSelectedIndex(2);&#xa;                else if(selectName.toString().equals(&quot;Steve Carver&quot;))&#xa;                idBox.setSelectedIndex(1);&#xa;                else if(selectName.toString().equals(&quot;Amanda Richards&quot;))&#xa;                idBox.setSelectedIndex(3);&#xa;                else if(selectName.toString().equals(&quot;John Smith&quot;))&#xa;                idBox.setSelectedIndex(4);&#xa;                else&#xa;                idBox.setSelectedIndex(0);&#xa;            }&#xa;        });&#xa;&#xa;clockInBtn.addActionListener(new ActionListener() {&#xa;            @Override&#xa;            public void actionPerformed(ActionEvent e) {&#xa;           if(!nameBox.getSelectedItem().toString().equals(&quot;[Select Name]&quot;) &amp;&amp;&#xa;               !idBox.getSelectedItem().toString().equals(&quot;[Select ID]&quot;)){&#xa;               for(int i = 0; i &lt; 1; i++){&#xa;               LocalDateTime now = LocalDateTime.now();&#xa;               String isoFormat = DateTimeFormatter.ISO_INSTANT.format(now.toInstant(ZoneOffset.UTC));&#xa;               String text = nameBox.getSelectedItem().toString();&#xa;               textArea.append(text + &quot; clocked in on &quot; + isoFormat + &quot;\n&quot;);&#xa;               }&#xa;               clockInBtn.setEnabled(false);           &#xa;            }&#xa;            else {&#xa;                String message = &quot;Select ID and Name to clock in&quot;;&#xa;                JOptionPane.showMessageDialog(new JFrame(), message, &quot;Error&quot;,&#xa;                JOptionPane.ERROR_MESSAGE);&#xa;            }&#xa;          }&#xa;        });&#xa;idBox.addActionListener(new ActionListener() {&#xa;            public void actionPerformed(ActionEvent event) {&#xa;&#xa;                JComboBox idBox = (JComboBox) event.getSource();&#xa;&#xa;                Object selected = idBox.getSelectedItem();&#xa;                if(selected.toString().equals(&quot;mmartz&quot;))&#xa;                clockInBtn.setEnabled(true);&#xa;                if(selected.toString().equals(&quot;scarver&quot;))&#xa;                clockInBtn.setEnabled(true);&#xa;                else if(selected.toString().equals(&quot;arichards5&quot;))&#xa;                clockInBtn.setEnabled(true);&#xa;                else if(selected.toString().equals(&quot;jsmith26&quot;))&#xa;                clockInBtn.setEnabled(true);&#xa;                else&#xa;                clockInBtn.setEnabled(true);&#xa;            }&#xa;        });&#xa;clockOutBtn.addActionListener(new ActionListener() {&#xa;            @Override&#xa;            public void actionPerformed(ActionEvent e) {&#xa;            if(!nameBox.getSelectedItem().toString().equals(&quot;[Select Name]&quot;) &amp;&amp;&#xa;               !idBox.getSelectedItem().toString().equals(&quot;[Select ID]&quot;)){&#xa;            for(int i = 0; i &lt; 1; i++){&#xa;            LocalDateTime now = LocalDateTime.now();&#xa;            String isoFormat = DateTimeFormatter.ISO_INSTANT.format(now.toInstant(ZoneOffset.UTC));&#xa;            String text = nameBox.getSelectedItem().toString();&#xa;            textArea.append(text + &quot; clocked out &quot; + isoFormat + &quot;\n&quot;);&#xa;            }&#xa;            clockOutBtn.setEnabled(false); &#xa;            }&#xa;            else {&#xa;                String message = &quot;Select ID and Name to clock out&quot;;&#xa;                JOptionPane.showMessageDialog(new JFrame(), message, &quot;Error&quot;,&#xa;                JOptionPane.ERROR_MESSAGE);&#xa;            }&#xa;          }&#xa;        });&#xa;idBox.addActionListener(new ActionListener() {&#xa;            public void actionPerformed(ActionEvent event) {&#xa;&#xa;                JComboBox idBox = (JComboBox) event.getSource();&#xa;&#xa;                Object selected = idBox.getSelectedItem();&#xa;                if(selected.toString().equals(&quot;mmartz&quot;))&#xa;                clockOutBtn.setEnabled(true);&#xa;                if(selected.toString().equals(&quot;scarver&quot;))&#xa;                clockOutBtn.setEnabled(true);&#xa;                else if(selected.toString().equals(&quot;arichards5&quot;))&#xa;                clockOutBtn.setEnabled(true);&#xa;                else if(selected.toString().equals(&quot;jsmith26&quot;))&#xa;                clockOutBtn.setEnabled(true);&#xa;                else&#xa;                clockOutBtn.setEnabled(true);&#xa;            }&#xa;        });"/>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ID"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="idBox">
+      <Properties>
+        <Property name="editable" type="boolean" value="true"/>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="5">
+            <StringItem index="0" value="[Select ID]"/>
+            <StringItem index="1" value="scarver"/>
+            <StringItem index="2" value="mmartz"/>
+            <StringItem index="3" value="arichards5"/>
+            <StringItem index="4" value="jsmith26"/>
+          </StringArray>
+        </Property>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Default Cursor"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Name"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="nameBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="5">
+            <StringItem index="0" value="[Select Name]"/>
+            <StringItem index="1" value="Steve Carver"/>
+            <StringItem index="2" value="Mike Martz"/>
+            <StringItem index="3" value="Amanda Richards"/>
+            <StringItem index="4" value="John Smith"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>
